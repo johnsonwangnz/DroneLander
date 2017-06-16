@@ -15,6 +15,7 @@ namespace DroneLander.ViewModels
         public MainViewModel(MainPage activityPage)
         {
             this.ActivityPage = activityPage;
+            // Temperarily comment this out just to test crash report
             this.ActiveLandingParameters = new LandingParameters();
             this.Altitude = this.ActiveLandingParameters.Altitude;
             this.Velocity = this.ActiveLandingParameters.Velocity;
