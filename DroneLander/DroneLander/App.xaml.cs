@@ -3,6 +3,8 @@ using Microsoft.Azure.Mobile;
 using Microsoft.Azure.Mobile.Analytics;
 using Microsoft.Azure.Mobile.Crashes;
 
+
+
 using Xamarin.Forms;
 
 namespace DroneLander
@@ -10,6 +12,14 @@ namespace DroneLander
     public partial class App : Application
     {
         public static MainViewModel ViewModel { get; set; }
+
+        public static Services.IAuthenticationService Authenticator { get; private set; }
+
+        public static void InitializeAuthentication(Services.IAuthenticationService authenticator)
+        {
+            Authenticator = authenticator;
+        }
+
         public App()
         {
             InitializeComponent();

@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿
 
 namespace DroneLander.Common
 {
@@ -16,5 +12,16 @@ namespace DroneLander.Common
         public const double StartingVelocity = 0.0;
         public const double StartingFuel = 1000.0;
         public const double StartingThrust = 0.0;
+    }
+
+    public static class MobileServiceConstants
+    {
+        public const string AppUrl = "https://dronelandermobilejw.azurewebsites.net";
+    }
+
+    public static class TelemetryConstants
+    {
+        public const string DisplayName = "Johnson";
+        public const string Tagline = "jjj";
     }
 }
