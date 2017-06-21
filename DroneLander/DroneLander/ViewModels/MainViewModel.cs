@@ -193,7 +193,7 @@ namespace DroneLander.ViewModels
                         this.DescentRate = this.ActiveLandingParameters.Velocity;
                         this.FuelRemaining = this.ActiveLandingParameters.Fuel / 1000;
                         this.Thrust = this.ActiveLandingParameters.Thrust;
-                    });
+                    }); 
 
                     if (this.FuelRemaining == 0.0) Helpers.AudioHelper.KillEngine();
                     if (this.IsAuthenticated) Helpers.ActivityHelper.SendTelemetryAsync(this.UserId, this.Altitude, this.DescentRate, this.FuelRemaining, this.Thrust);
